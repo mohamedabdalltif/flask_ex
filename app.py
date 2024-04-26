@@ -11,12 +11,12 @@
 
 
 from flask import Flask, request, jsonify, make_response
-from flask_cors import CORS
+# from flask_cors import CORS
 import joblib
 import pandas as pd
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 # Load the pre-trained model
 regr_energy = joblib.load('./solar_energy_model.joblib')
